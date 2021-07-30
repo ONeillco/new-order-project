@@ -16,7 +16,8 @@ const RecipeList = () => {
     fetch(`https://api.edamam.com/search?q=${main}&app_id=${APP_ID}&app_key=${APP_KEY}`)
       .then(res => res.json())
       .then(data => setRecipes(data.hits))
-}, [main])
+    }, [main])
+   
 
   const updateSubmit = e => {
     setSubmit(e.target.value)
@@ -48,6 +49,7 @@ const RecipeList = () => {
         image={recipe.recipe.image} 
         dishType={recipe.recipe.dishType}
         ingredients={recipe.recipe.ingredients} 
+        cuisineType={recipe.recipe.cuisineType}
         />  
          ))}
 
@@ -60,7 +62,7 @@ const RecipeList = () => {
 
 
 
-       
+
        
   );
 }

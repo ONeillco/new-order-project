@@ -1,7 +1,8 @@
 import React from 'react'
 import style from './RecipeCard.module.css'
 
-const RecipeCard = ({title, calories, image, ingredients, dishType}) => {
+const RecipeCard = ({title, calories, image, ingredients, dishType, cuisineType}) => {
+    
     return (
         <div className={style.recipe} >
             <h1>{title}</h1>
@@ -11,6 +12,7 @@ const RecipeCard = ({title, calories, image, ingredients, dishType}) => {
             ))}
             </ol>
             <p>{dishType}</p>
+            <p>{cuisineType}</p>
             <p>{Math.round(calories)} calories</p>
             <img className={style.image} src={image} alt="Food" />  
         </div>

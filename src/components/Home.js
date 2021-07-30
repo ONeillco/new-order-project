@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div >
         <h1 style={{color: "firebrick"}}>
-            Discover a new world of flavor!
+            Discover a new world of flavor with recipes from around the world!
         </h1>
         {/* <img className='img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1Mq2SouaqPt3zZNe9dee0Ho2jt4qiO5ffA&usqp=CAU' ></img> */}
         <img className='img1' src='https://images.glaciermedia.ca/polopoly_fs/1.24021745.1574967216!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/turkish-food.jpg' alt="" ></img>
