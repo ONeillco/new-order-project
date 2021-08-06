@@ -9,7 +9,7 @@ color: 'black'
 
     return (
         <nav>
-            <h3>Logo</h3>
+            <h3>Recipes Worldwide</h3>
             <ul className="nav-links">
                 <NavLink style={navStyle} to='/home'>
                 <li>Home</li>
