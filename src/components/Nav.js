@@ -1,31 +1,17 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import '../App.css';
 
 const Nav = () => {
-const navStyle = {
-color: 'black'
-}
-
-    return (
-        <nav>
-            <h3>Recipes Worldwide</h3>
-            <ul className="nav-links">
-                <NavLink style={navStyle} to='/home'>
-                <li>Home</li>
-                </NavLink>
-                
-                <NavLink style={navStyle} to='/about'>
-                <li>About</li>
-                </NavLink>
-
-                <NavLink style={navStyle} to='/recipes' >
-                <li>Recipes</li>
-                </NavLink>
-
-            </ul>
-        </nav>
-    )
+  return (
+    <div>
+      <ul>
+        <li><NavLink to="/" >Dog House</NavLink></li>
+        <li><NavLink to="/dogs" >Dogs</NavLink></li>
+        <li><NavLink to="/deeds" >Deeds</NavLink></li>
+        <li><NavLink to="/dogs/add" >Pup Sign Up!</NavLink></li>
+      </ul>
+    </div>
+  )
 }
 
 export default Nav
